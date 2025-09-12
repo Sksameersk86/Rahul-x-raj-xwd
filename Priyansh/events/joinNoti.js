@@ -55,8 +55,8 @@ ${global.config.PREFIX}🌺🍃Ƈɑɭɭɑɗ føɽ Ɑɳɣ ɪʂʂuɛ
 <<<<<------------------------------>>>>>
 A̸N̸D̸ F̸O̸R̸ A̸N̸Y̸ R̸E̸P̸O̸R̸T̸ O̸R̸ C̸O̸N̸T̸A̸C̸T̸ B̸O̸T̸ D̸E̸V̸A̸L̸O̸P̸A̸R̸....💙🍫
 
-💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝐑𝐀𝐇𝐔𝐋 𝐒𝐈𝐍𝐆𝐇☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞www.facebook.com/ve.ified.j.649774\n
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇 
+💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝐑𝐀𝐇𝐔𝐋 𝐒𝐈𝐍𝐆𝐇☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝐑𝐀𝐇𝐔𝐋 🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞www.facebook.com/ve.ified.j.649774\n
+👋For Any Kind Of Help Contact On Telegram  Username 👉 @𝐑𝐀𝐇𝐔𝐋6261😇 
 
 
 ✮☸✮
