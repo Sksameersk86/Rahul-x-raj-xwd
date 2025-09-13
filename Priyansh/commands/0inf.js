@@ -1,59 +1,58 @@
 module.exports.config = {
-	name: "info",
-	version: "1.0.1", 
-	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-	description: "Admin and Bot info.",
-	commandCategory: "...",
-	cooldowns: 1,
-	dependencies: 
-	{
-    "request":"",
-    "fs-extra":"",
-    "axios":""
+  name: "info",
+  version: "4.0.0",
+  hasPermssion: 0,
+  credits: "Rudra",
+  description: "Display swaggy owner and bot info with random stylish image",
+  commandCategory: "info",
+  cooldowns: 1,
+  dependencies: {
+    "request": "",
+    "fs-extra": "",
+    "axios": ""
   }
 };
-module.exports.run = async function({ api,event,args,client,Users,Threads,__GLOBAL,Currencies }) {
-const axios = global.nodemodule["axios"];
-const request = global.nodemodule["request"];
-const fs = global.nodemodule["fs-extra"];
-const time = process.uptime(),
-		hours = Math.floor(time / (60 * 60)),
-		minutes = Math.floor((time % (60 * 60)) / 60),
-		seconds = Math.floor(time % 60);
-const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
-var link =                                     
-["https://i.ibb.co/27ry1QT0/1757691114364-0-689177104109495.jpg"];
-var callback = () => api.sendMessage({body:` ╾━╤デ╦︻(▀̿Ĺ̯▀̿ ̿)🇮🇳 𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 𝐑𝐀𝐉 𝐗𝐖𝐗 𝐗 𝐑𝐀𝐇𝐔𝐋 🇮🇳 
-(⌐▀͡ ̯ʖ▀)︻̷┻̿═━一-
 
-☄️Bot Name︎︎︎☄️  ${global.config.BOTNAME}
+module.exports.run = async function ({ api, event }) {
+  const axios = global.nodemodule["axios"];
+  const request = global.nodemodule["request"];
+  const fs = global.nodemodule["fs-extra"];
+  const moment = require("moment-timezone");
 
-🧸Bot Admin🧸☞︎︎︎☜︎︎︎✰ 𝐑𝐀𝐇𝐔𝐋 𝐗 𝐑𝐀𝐉 🩷🥀
+  const time = process.uptime();
+  const hours = Math.floor(time / 3600);
+  const minutes = Math.floor((time % 3600) / 60);
+  const seconds = Math.floor(time % 60);
+  const dateNow = moment.tz("Asia/Kolkata").format("『DD/MM/YYYY』 【HH:mm:ss】");
 
-🙈bot andmin owner facebook id link🙈➪ www.facebook.com/ve.ified.j.649774💞🕊️
+  // Your personal Imgur + anime links
+  const imgLinks = [
+    "https://i.ibb.co/20z09FP6/1757678368313-0-5200708942107688.jpg",
+  ];
 
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @𝐫𝐚𝐡𝐮𝐥𝐛𝐬𝐬😇
+  const chosenImage = imgLinks[Math.floor(Math.random() * imgLinks.length)];
 
-✧══════•❁❀❁•══════✧
+  const msg = `✨ 𝙎𝙒𝘼𝙂 𝙈𝙊𝘿𝙀 𝙊𝙉 ✨\n━━━━━━━━━━━━━━━\n\n` +
+              `👑 𝗕𝗢𝗧: ${global.config.BOTNAME || "🔥 RAJ XWD THAKUR 👿"}\n` +
+              `🧠 𝗢𝗪𝗡𝗘𝗥:𝙍𝘼𝙅 𝙏𝙃𝘼𝙆𝙐𝙍 𝙓𝙒𝘿  🔥 (UID:100032269830615 )\n` +
+              `📸 𝗜𝗡𝗦𝗧𝗔: @rajthakur8` +
+              `📍 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX || "+"}\n` +
+              `📆 𝗗𝗔𝗧𝗘: ${dateNow}\n` +
+              `⏳ 𝗨𝗣𝗧𝗜𝗠𝗘: ${hours}h ${minutes}m ${seconds}s\n\n` +
+              `💌 𝗧𝗬𝗣𝗘 '${global.config.PREFIX || "+"}help' 𝗙𝗢𝗥 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 💌\n` +
+              `━━━━━━━━━━━━━━━\n💖 𝑴𝒂𝒅𝒆 𝒘𝒊𝒕𝒉 𝑺𝒘𝒂𝒈 𝒃𝒚 RAJ THAKUR XWD`;
 
-🌸Bot Prefix🌸☞︎︎︎☜︎︎︎✰ ${global.config.PREFIX}
+  const callback = () =>
+    api.sendMessage(
+      {
+        body: msg,
+        attachment: fs.createReadStream(__dirname + "/cache/rudra_info.jpg")
+      },
+      event.threadID,
+      () => fs.unlinkSync(__dirname + "/cache/rudra_info.jpg")
+    );
 
-♥️Bot Owner♥️ ☞︎︎︎☜︎︎︎✰ 𝐑𝐀𝐇𝐔𝐋 𝐗 𝐑𝐀𝐉 
-
-🥳UPTIME🥳
-
-🌪️Today is🌪️ ☞︎︎︎☜︎︎︎✰ ${juswa} 
-
-⚡Bot is running⚡ ${hours}:${minutes}:${seconds}.
-
-✅Thanks for using ${global.config.BOTNAME} Bot🖤
-
-
-____________________>😀🥰____________>____________________🩷*➸⃟̗̗̗̗̗̗̗̗̗̗̗̗̗̗̀̀̀̀̀̀̀̀̀̀̀̀̀⚔️⍤⃝𝐑𝐀̶𝆺𝅥⃝𝐇𝐔𝐋😌🌺__________________>💓________________
-
-
-`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
-   };
+  request(encodeURI(chosenImage))
+    .pipe(fs.createWriteStream(__dirname + "/cache/rudra_info.jpg"))
+    .on("close", () => callback());
+};
